@@ -1,5 +1,5 @@
 Installation Instructions
-1. Install Requirements
+1. Install Requirements//
 1.1 Solidity Compiler
    sudo add-apt-repository ppa:ethereum/ethereum
    sudo apt-get update
