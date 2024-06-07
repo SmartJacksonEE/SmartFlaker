@@ -57,6 +57,6 @@
                         Maximum number of symbolic execution calls before restting population (default: 10)
     -v, --version         show program's version number and exit
 # 4. Running
-    python3 fuzzer/main.py -s path/to/contract.sol -c contract  --solc v0.4.26 --evm byzantium -g 100(Random)
-    python3 fuzzer/main.py -s path/to/contract.sol -c contract --seed SEED --constraint-solving CONSTRAINT_SOLVING --max-symbolic-execution MAX_SYMBOLIC_EXECUTION --solc v0.4.26 --evm byzantium -g 100(Seed Strategy)
-    python3 fuzzer/main.py -s path/to/contract.sol -c contract --data-dependency DATA_DEPENDENCY --constraint-solving CONSTRAINT_SOLVING --max-symbolic-execution MAX_SYMBOLIC_EXECUTION --solc v0.4.26 --evm byzantium -g 100(SmartFlaker)
+    python3 fuzzer/main.py -s path/to/contract.sol -c contract --seed SEED --solc v0.4.26 --evm byzantium -g 100(Random)
+    python3 fuzzer/main.py -s path/to/contract.sol -c contract --constraint-solving CONSTRAINT_SOLVING --max-symbolic-execution MAX_SYMBOLIC_EXECUTION --seed SEED --solc v0.4.26 --evm byzantium -g 100(Seed Strategy)
+    python3 fuzzer/main.py -s path/to/contract.sol -c contract --data-dependency DATA_DEPENDENCY --constraint-solving CONSTRAINT_SOLVING --max-symbolic-execution MAX_SYMBOLIC_EXECUTION --seed SEED --solc v0.4.26 --evm byzantium -g 100(SmartFlaker)
