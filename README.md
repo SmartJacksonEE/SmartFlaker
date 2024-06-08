@@ -1,5 +1,7 @@
 # SmartFlaker
+SmartFlaker is a critical-path-oriented approach that aims to identify potential causes of flaky tests in smart contracts. Employing evolutionary fuzz testing techniques, SmartFlaker generates a series of transaction sequences as test inputs and actively re-executes the generated sequences. Subsequently, for the flaky tests that arise from re-executions, we utilize a root cause locator to dynamically detect the underlying root causes of these flaky tests. We have designed three types of root cause detectors, specifically tailored to detect root causes stemming from transaction order dependencies, blockchain property dependencies, and concurrency dependencies. Ultimately, SmartFlaker outputs the identified flaky tests in the contract under test, along with the location and type of the root causes.
 
+To evaluate the effectiveness and efficiency of SmartFlaker, we conducted an assessment on a self-constructed dataset comprising 268 Ethereum smart contracts. The methodology implemented and the dataset used in this study are all included in the SmartFlaker.7z file.
   # 1.Install Requirements
   # 1.1 Solidity Compiler
     sudo add-apt-repository ppa:ethereum/ethereum
