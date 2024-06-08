@@ -1,4 +1,5 @@
-# Installation Instructions
+# SmartFlaker
+
   # 1.Install Requirements
   # 1.1 Solidity Compiler
     sudo add-apt-repository ppa:ethereum/ethereum
